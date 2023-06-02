@@ -1,0 +1,25 @@
+{
+	"name": "@videopass/ctms-model",
+	"version": "0.0.7",
+	"description": "videopass ctms model",
+	"author": "videopass",
+	"license": "ISC",
+	"main": "lib/index.js",
+	"typings": "lib/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"deploy": "rm -r ./lib &&  tsc && bump && npm publish --access public",
+		"update": "ncu -u  && npm install"
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.1",
+		"@types/node": "^20.1.1",
+		"jest": "^29.5.0",
+		"jest-watch-typeahead": "^2.2.2",
+		"ts-jest": "^29.1.0",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.0.4",
+		"version-bump-prompt": "^6.1.0",
+		"npm-check-updates": "^16.10.10"
+	}
+}
